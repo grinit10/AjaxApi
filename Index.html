@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">  
+        <strong>Ajax Api Project - Movie</strong></br>
+     </head>
+     <body>
+         <p>
+                <button class="btn" type='button' id='listOfMovies'>List Of Movies</button>
+                <button class="btn1" type='button' style="display :none" id='moviesList'>List Of Movies</button>              
+        </p>   
+        <p>
+                <button class="btn" type='button' id='addNewMovie'>Add New Movie</button> 
+        </p>             
+         
+         
+<div id='newForm'  style="display :none">
+    <div>
+        <input type='hidden' id='id'>
+    </div>
+    <div>
+        <label for='name'>Name : </label>
+        <input type='text' value='' id='name'>
+    </div>
+    <div>
+        <label for='releasedDate'>Released Date : </label>
+        <input type='text' id='releasedDate'>
+    </div>
+    <div>
+        <label for='dateAdded'>Date Added : </label>
+        <input type='text' id='dateAdded'>
+    </div> 
+    <div>
+        <label for='numberInStock'>Number In Stock : </label>
+        <input type='text' id='numberInStock'>
+    </div>
+    <div>
+        <label for='genreName'>Genre Id : </label>
+        <input type='text' id='genreName'>
+    </div> 
+</div>
+         
+         <ul id="movieList"></ul>
+
+<button type="submit" id="movie">Place Movie</button>
+
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script src="Ajax.js"></script>
+     </body>
+</html>
+
